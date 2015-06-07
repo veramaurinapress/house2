@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :grids
-  root 'grids#index'
+  root :to => redirect('/grids')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

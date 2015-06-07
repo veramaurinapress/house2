@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @grid.picture %>
+  <%= image_tag(@grid.picture_url, :width => 600) if @grid.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_grid_path(@grid) %> |
