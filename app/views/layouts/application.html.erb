@@ -1,72 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
   <title>House2</title>
-=======
-  <title>House1</title>
->>>>>>> 29e45486c119b82cf88ca86edc48d085c289a7e0
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<<<<<<< HEAD
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Vera Maurina Press | Grid</a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/grids">Grid</a></li>
-        <li ><%= link_to 'New Grid', new_grid_path %></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
 <div class="container">
   <%= yield %>
 </div>
-
-<footer>
-  <div class="container">
-    Vera Maurina Press  
-  </div>
-</footer>
-=======
-<%= render 'shared/navigation' %>
-
-  <div id="main-container" class="container">
-      <div id="main-container" class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <% flash.each do |name, msg| -%>
-            <%= content_tag :div, msg, class: "alert alert-#{name}" %>
-          <% end -%>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-3">
-          <h3>Sentences</h3>
-        </div>
-        <div class="col-xs-9">
-          <%= yield %>
-        </div>
-      </div>
-    </div>
-
-  </body>
-</html>
->>>>>>> 29e45486c119b82cf88ca86edc48d085c289a7e0
 
 </body>
 </html>

@@ -15,18 +15,3 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
-<<<<<<< HEAD
-=======
-
-$(document).ready(function() {
-  $('.has-tooltip').tooltip();
-});
-
-$(document).ready(function() {
-  $('.has-tooltip').tooltip();
-  $('.has-popover').popover({
-    trigger: 'hover'
-  });
-});
-
->>>>>>> 29e45486c119b82cf88ca86edc48d085c289a7e0
