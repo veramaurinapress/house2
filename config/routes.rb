@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  resources :comments
   resources :grids
+=======
+  resources :sentences
+  root 'sentences#index'
+>>>>>>> 29e45486c119b82cf88ca86edc48d085c289a7e0
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+<<<<<<< HEAD
+    root :to => redirect('/grids')
+=======
   # root 'welcome#index'
+>>>>>>> 29e45486c119b82cf88ca86edc48d085c289a7e0
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

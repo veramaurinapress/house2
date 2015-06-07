@@ -65,6 +65,8 @@ class GridsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_grid
       @grid = Grid.find(params[:id])
+      @comments = @grid.comments.all
+      @comment = @grid.comments.build
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
